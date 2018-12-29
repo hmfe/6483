@@ -1,0 +1,19 @@
+.LoadingSpinner {
+  margin-top: 0.5em;
+  text-align: center;
+
+  img {
+    width: 2em;
+    height: auto;
+    animation: rotation 1.5s infinite linear;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.SearchHistoryList {
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin: auto 0 2em;
+      padding: 0.5em 0.8em;
+      background: $danger;
+      border: none;
+      border-radius: 0.5em;
+      color: white;
+      cursor: pointer;
+      font-size: 0.8em;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      @media (max-width: $smBreakpoint) {
+        padding: 0.8em 1em;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+  }
+}

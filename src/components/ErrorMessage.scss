@@ -1,0 +1,7 @@
+@import "../variables.scss";
+
+.ErrorMessage {
+  text-align: center;
+  margin: 0.5em 0 1em;
+  color: $danger;
+}
