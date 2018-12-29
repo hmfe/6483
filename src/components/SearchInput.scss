@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.SearchInput {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  input {
+    padding: 1em;
+    border: none;
+    flex: 1;
+    background: $inputBg;
+    font-size: 1em;
+  }
+
+  button {
+    border: none;
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    right: 0.5em;
+    background: transparent;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+
+    @media (max-width: $smBreakpoint) {
+      font-size: 1.5em;
+      right: 0;
+    }
+  }
+}

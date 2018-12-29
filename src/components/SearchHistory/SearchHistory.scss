@@ -1,0 +1,45 @@
+@import "../../variables.scss";
+
+.SearchHistory {
+  td {
+    padding-bottom: 0.5em;
+  }
+
+  .timestamp, .delete-btn {
+    text-align: right;
+  }
+
+  .timestamp {
+    color: gray;
+
+    @media (max-width: $smBreakpoint) {
+      font-size: 0.8em;
+    }
+  }
+
+  .delete-btn {
+    width: 2em;
+
+    button {
+      border: 0.1em solid $danger;
+      color: $danger;
+      border-radius: 100%;
+      vertical-align: text-bottom;
+      background: white;
+      cursor: pointer;
+      font-size: 0.8em;
+      padding: 0.2em 0.44em;
+      font-weight: bold;
+
+      &:hover {
+        background: $danger;
+        color: white;
+      }
+
+      @media (max-width: $smBreakpoint) {
+        font-size: 1em;
+        padding: 0.3em 0.54em;
+      }
+    }
+  }
+}

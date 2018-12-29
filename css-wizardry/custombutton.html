@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Custom Button</title>
+    <style>
+      .custom-button {
+        background-color: #f0a355;
+        font-size: 2em;
+        font-weight: 900;
+        color: black;
+        border: 0.1em solid #8d8d8d;
+        padding: 0em 0.3em 0em 0.5em;
+        line-height: 2em;
+      }
+
+      .custom-button::after {
+        content: '\2715';
+        background-color: white;
+        border-radius: 100%;
+        padding: 0.6em 0.8em;
+        margin-left: 0.3em;
+        font: 900 1.4em/2.7 Arial, sans-serif;
+        vertical-align: middle;
+        -webkit-text-stroke: 0.05em black;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="custom-button">Delete</button>
+  </body>
+</html>
